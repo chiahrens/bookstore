@@ -12,9 +12,12 @@
     <!-- Load CXF spring config -->
     <import resource="classpath:META-INF/cxf/cxf.xml" />
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
-    <!-- auto load all spring beans for package com.walmart.* -->
+    
+    <!-- Auto load all spring beans for package com.walmart.* annotized by @Component -->
     <context:component-scan base-package="com.walmart"/>
-    <!-- Base address for server is /. Autoload service beans in com.walmart.* -->
+    
+    <!-- Base address for server is /. -->
+    <!-- Auto load service beans in com.walmart.* annotized by @WebService -->
     <jaxrs:server address="/" basePackages="com.walmart">
         <jaxrs:providers>
             <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>

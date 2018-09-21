@@ -3,6 +3,7 @@
     PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
     "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app>
+
     <!-- Initialize Spring -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -13,6 +14,7 @@
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
     </listener>
+    
     <!-- Init CXF servlet -->
     <servlet>
         <servlet-name>CXFServlet</servlet-name>
