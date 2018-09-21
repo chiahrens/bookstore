@@ -1,8 +1,12 @@
 # Simple Web Service app using Spring and CXF
 
-## To run
-mvn clean install  
+## Getting Started
+```
+git clone https://github.com/chiahrens/bookstore.git
+cd bookstore
+mvn clean install
 mvn tomcat:run
+```
 
 Insert new book
 ```
